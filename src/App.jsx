@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 // ---------- CONFIG ----------
 
-const NAME = "Zack";
+const NAME = "Abdelghany Sayed";
 const BIO = "Passionate Web Developer building modern web apps.";
 
 const SKILLS = [
