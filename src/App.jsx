@@ -18,16 +18,13 @@ const SKILLS = [
 ];
 
 const PROJECTS = [
-    tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
-    screenshots: [
-      "screenshotshome.png.png",
-      "screenshotsdashboard.png.png"
-    ],
+  {
     title: "Laravel Restaurant Management System",
-    description:"A scalable Laravel-based restaurant management system with an intuitive admin panel for menus, orders, reservations, staff roles, and reporting. Built with MVC architecture, authentication, role-based access control, and RESTful endpoints for easy integration.",
+    description:
+      "A scalable Laravel-based restaurant management system with an intuitive admin panel for menus, orders, reservations, staff roles, and reporting. Built with MVC architecture, authentication, role-based access control, and RESTful endpoints for easy integration.",
     tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
+    screenshots: ["screenshotshome.png.png", "screenshotsdashboard.png.png"],
     github: "https://github.com/sbedo2123/laravel-restaurant-management-system",
-    
     live: "#",
   },
   {
@@ -131,7 +128,11 @@ export default function App() {
                           <img
                             src={`/Protfolio1/${src}`}
                             alt={`${p.title} screenshot ${idx + 1}`}
-                            style={{ width: 140, height: 90, objectFit: "cover" }}
+                            style={{
+                              width: 140,
+                              height: 90,
+                              objectFit: "cover",
+                            }}
                             className="rounded border"
                           />
                         </a>
