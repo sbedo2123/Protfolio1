@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 // ---------- CONFIG ----------
 
-const NAME = 'Zack Lee';
+const NAME = 'Zack ';
 const BIO = 'Passionate Web Developer building modern web apps.';
 
 const SKILLS = ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Git', 'Laravel', 'PHP'];
