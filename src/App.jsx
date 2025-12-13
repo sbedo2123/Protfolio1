@@ -18,11 +18,16 @@ const SKILLS = [
 ];
 
 const PROJECTS = [
-  {
+    tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
+    screenshots: [
+      "screenshotshome.png.png",
+      "screenshotsdashboard.png.png"
+    ],
     title: "Laravel Restaurant Management System",
     description:"A scalable Laravel-based restaurant management system with an intuitive admin panel for menus, orders, reservations, staff roles, and reporting. Built with MVC architecture, authentication, role-based access control, and RESTful endpoints for easy integration.",
     tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
     github: "https://github.com/sbedo2123/laravel-restaurant-management-system",
+    
     live: "#",
   },
   {
@@ -111,6 +116,29 @@ export default function App() {
                 <div className="card-body">
                   <h5 className="card-title">{p.title}</h5>
                   <p className="card-text text-muted">{p.description}</p>
+                  <p className="card-text text-muted">{p.description}</p>
+
+                  {p.screenshots && p.screenshots.length > 0 && (
+                    <div className="mb-3 d-flex flex-wrap">
+                      {p.screenshots.map((src, idx) => (
+                        <a
+                          key={idx}
+                          href={`/Protfolio1/${src}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="me-2 mb-2"
+                        >
+                          <img
+                            src={`/Protfolio1/${src}`}
+                            alt={`${p.title} screenshot ${idx + 1}`}
+                            style={{ width: 140, height: 90, objectFit: "cover" }}
+                            className="rounded border"
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  )}
+
                   <div className="mb-3">
                     {(p.tech || p.technologies || []).map((t) => (
                       <span key={t} className="badge bg-secondary me-2">
