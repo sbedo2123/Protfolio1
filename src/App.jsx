@@ -1,39 +1,46 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { FaArrowRight } from "react-icons/fa";
 
 // ---------- CONFIG ----------
 
-const NAME = 'Zack ';
-const BIO = 'Passionate Web Developer building modern web apps.';
+const NAME = "Zack";
+const BIO = "Passionate Web Developer building modern web apps.";
 
-const SKILLS = ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Git', 'Laravel', 'PHP'];
+const SKILLS = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Bootstrap",
+  "Git",
+  "Laravel",
+  "PHP",
+];
 
 const PROJECTS = [
   {
-    title: 'Project One',
-    description: 'Short description about the project and tech used.',
-    tech: ['Laravel', 'PHP', 'MYSQL', 'Blade' , 'Bootstrap'],
-    github: 'https://github.com/sbedo2123/laravel-restaurant-management-system',
-    live: '#',
+    title: "Laravel Restaurant Management System",
+    description:"A scalable Laravel-based restaurant management system with an intuitive admin panel for menus, orders, reservations, staff roles, and reporting. Built with MVC architecture, authentication, role-based access control, and RESTful endpoints for easy integration.",
+    tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
+    github: "https://github.com/sbedo2123/laravel-restaurant-management-system",
+    live: "#",
   },
   {
     title: "Blog Management System",
-    description: "A dynamic PHP web application with a fully-featured admin panel that allows the administrator to manage blog content efficiently.",
-    screenshots: [
-      "screenshots/home.png",
-      "screenshots/dashboard.png"
-    ],
+    description:
+      "A dynamic PHP web application with a fully-featured admin panel that allows the administrator to manage blog content efficiently.",
+    screenshots: ["screenshots/home.png", "screenshots/dashboard.png"],
     technologies: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
-    github: 'https://github.com/sbedo2123/blog_project',
-    live: '#',
+    github: "https://github.com/sbedo2123/blog_project",
+    live: "#",
   },
 ];
 
 const CONTACT = {
-  email: 'sbedo2123@example.com',
-  github: 'https://github.com/sbedo2123',
-  linkedin: 'https://www.linkedin.com/in/abdelghany-sayed-56493a3a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  email: "sbedo2123@example.com",
+  github: "https://github.com/sbedo2123",
+  linkedin:
+    "https://www.linkedin.com/in/abdelghany-sayed-56493a3a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
 };
 
 // ---------- END CONFIG ----------
@@ -46,9 +53,21 @@ export default function App() {
           <span className="navbar-brand fw-bold">{NAME}</span>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-              <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
-              <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+              <li className="nav-item">
+                <a className="nav-link" href="#projects">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#skills">
+                  Skills
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -60,17 +79,24 @@ export default function App() {
             <h1 className="fw-bold display-5">Hi, I’m {NAME}.</h1>
             <p className="lead text-muted">{BIO}</p>
             <div className="d-flex gap-3 mt-3">
-              <a href={CONTACT.github} className="btn btn-outline-dark d-flex align-items-center gap-2">
+              <a
+                href={CONTACT.github}
+                className="btn btn-outline-dark d-flex align-items-center gap-2"
+              >
                 GitHub <FaArrowRight />
               </a>
-              <a href={CONTACT.linkedin} className="btn btn-outline-primary">LinkedIn</a>
+              <a href={CONTACT.linkedin} className="btn btn-outline-primary">
+                LinkedIn
+              </a>
             </div>
           </div>
           <div className="col-md-6">
             <div className="p-4 bg-white shadow rounded">
               <h5>Contact</h5>
               <p className="mb-1">Email: {CONTACT.email}</p>
-              <small className="text-muted">Available for remote & freelance work.</small>
+              <small className="text-muted">
+                Available for remote & freelance work.
+              </small>
             </div>
           </div>
         </div>
@@ -86,12 +112,18 @@ export default function App() {
                   <h5 className="card-title">{p.title}</h5>
                   <p className="card-text text-muted">{p.description}</p>
                   <div className="mb-3">
-                    {p.tech.map((t) => (
-                      <span key={t} className="badge bg-secondary me-2">{t}</span>
+                    {(p.tech || p.technologies || []).map((t) => (
+                      <span key={t} className="badge bg-secondary me-2">
+                        {t}
+                      </span>
                     ))}
                   </div>
-                  <a href={p.live} className="btn btn-sm btn-primary me-2">Live</a>
-                  <a href={p.github} className="btn btn-sm btn-outline-dark">GitHub</a>
+                  <a href={p.live} className="btn btn-sm btn-primary me-2">
+                    Live
+                  </a>
+                  <a href={p.github} className="btn btn-sm btn-outline-dark">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -103,22 +135,32 @@ export default function App() {
         <h2 className="fw-bold mb-3">Skills</h2>
         <div className="d-flex flex-wrap gap-2">
           {SKILLS.map((s) => (
-            <span key={s} className="badge bg-dark">{s}</span>
+            <span key={s} className="badge bg-dark">
+              {s}
+            </span>
           ))}
         </div>
       </section>
 
       <section id="contact" className="container py-5">
         <h2 className="fw-bold mb-3">Contact</h2>
-        <p>Email: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>
+        <p>
+          Email: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </p>
         <div className="d-flex gap-3">
-          <a href={CONTACT.github} className="btn btn-outline-dark">GitHub</a>
-          <a href={CONTACT.linkedin} className="btn btn-outline-primary">LinkedIn</a>
+          <a href={CONTACT.github} className="btn btn-outline-dark">
+            GitHub
+          </a>
+          <a href={CONTACT.linkedin} className="btn btn-outline-primary">
+            LinkedIn
+          </a>
         </div>
       </section>
 
       <footer className="text-center py-4 bg-white border-top mt-5">
-        <small className="text-muted">© {new Date().getFullYear()} {NAME} — React + Bootstrap Portfolio</small>
+        <small className="text-muted">
+          © {new Date().getFullYear()} {NAME} — React + Bootstrap Portfolio
+        </small>
       </footer>
     </div>
   );
