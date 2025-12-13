@@ -19,19 +19,19 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    title: "Laravel Restaurant Management System",
+    title: " Business Landing Page",
     description:
-      "A scalable Laravel-based restaurant management system with an intuitive admin panel for menus, orders, reservations, staff roles, and reporting. Built with MVC architecture, authentication, role-based access control, and RESTful endpoints for easy integration.",
-    tech: ["Laravel", "PHP", "MYSQL", "Blade", "Bootstrap"],
-    screenshots: ["screenshotshome.png.png", "screenshotsdashboard.png.png"],
-    github: "https://github.com/sbedo2123/laravel-restaurant-management-system",
-    live: "#",
+      "A responsive business landing page built with React and Bootstrap, featuring smooth scrolling and modern design.",
+    tech: ["React", "HTML", "Javascript", "CSS", "Bootstrap"],
+    
+    github: "https://github.com/sbedo2123/Landing-Page",
+    live: "https://sbedo2123.github.io/Landing-Page/",
   },
   {
     title: "Blog Management System",
     description:
       "A dynamic PHP web application with a fully-featured admin panel that allows the administrator to manage blog content efficiently.",
-    screenshots: ["screenshots/home.png", "screenshots/dashboard.png"],
+    screenshots: ["screenshotshome.png.png", "screenshotsdashboard.png.png"],
     technologies: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
     github: "https://github.com/sbedo2123/blog_project",
     live: "#",
