@@ -13,15 +13,19 @@ const PROJECTS = [
   {
     title: 'Project One',
     description: 'Short description about the project and tech used.',
-    tech: ['React', 'Bootstrap'],
-    github: '#',
+    tech: ['Laravel', 'PHP', 'MYSQL', 'Blade' , 'Bootstrap'],
+    github: 'https://github.com/sbedo2123/laravel-restaurant-management-system',
     live: '#',
   },
   {
-    title: 'Project Two',
-    description: 'Another project; replace with your info.',
-    tech: ['Node.js', 'Express'],
-    github: '#',
+    title: "Blog Management System",
+    description: "A dynamic PHP web application with a fully-featured admin panel that allows the administrator to manage blog content efficiently.",
+    screenshots: [
+      "screenshots/home.png",
+      "screenshots/dashboard.png"
+    ],
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
+    github: 'https://github.com/sbedo2123/blog_project',
     live: '#',
   },
 ];
