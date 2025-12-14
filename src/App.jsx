@@ -23,7 +23,7 @@ const PROJECTS = [
     description:
       "A responsive business landing page built with React and Bootstrap, featuring smooth scrolling and modern design.",
     tech: ["React", "HTML", "Javascript", "CSS", "Bootstrap"],
-    
+
     github: "https://github.com/sbedo2123/Landing-Page",
     live: "https://sbedo2123.github.io/Landing-Page/",
   },
