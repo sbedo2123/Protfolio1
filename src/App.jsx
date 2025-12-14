@@ -39,7 +39,7 @@ const PROJECTS = [
 ];
 
 const CONTACT = {
-  email: "sbedo2123@example.com",
+  email: "sbedo2123@gmail.com",
   github: "https://github.com/sbedo2123",
   linkedin:
     "https://www.linkedin.com/in/abdelghany-sayed-56493a3a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
